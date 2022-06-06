@@ -1,0 +1,158 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.close{
+    margin-top: -28px;
+}
+.body{
+    background: url("image/bg.png") center;
+    backdrop-filter: blur(2.5px);
+    height: 100vh;
+}
+.btn-modal{
+    background: red;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 50px 10px 50px;
+    margin-top:30%;
+    margin-bottom: 30%;
+    border-radius: 50px;
+}
+.gif{
+    margin-top:15%;
+}
+.btn-modal:hover{
+    color: white;
+}
+.modal-title{
+    font-size: 15px;
+    color: black;
+    padding-left: 12px;
+}
+input[type=text]{
+    margin-top: 20px;
+    padding: 15px 0px 20px 0px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+input[type=text]:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+}
+input[type=password]:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+}
+input[type=password]{
+    margin-top: 0px;
+    padding: 15px 0px 20px 0px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+}
+.butt{
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.modal-content{
+    width: 85%;
+}
+.rrr{
+    margin-top: 130px;
+    width: 200px;
+}
+
+
+@media (max-width: 576px) {
+    .btn-modal{
+        background: red;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 100% !important;
+        margin-bottom: 100% !important;
+    }
+    .modal-content{
+        margin-top: 30px;
+        width: 100%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=password]{
+        width: 100%;
+    }
+    .rrr{
+        margin-top: 130px;
+        width: 50%;
+    }
+
+    }
+
+   @media (max-width: 768px) {
+    .mode{
+        margin-left: 150px;
+    }
+    .btn-modal{
+        background: red;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .modal-content{
+        margin-top: 40px;
+        width: 100%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=password]{
+        width: 100%;
+    }
+    }
+
+   @media (max-width: 992px) { 
+    .mode{
+        margin-left: 150px;
+    }
+    .btn-modal{
+        background: red;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .modal-content{
+        margin-top: 50px;
+        width: 100%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=password]{
+        width: 100%;
+    }
+      }
+  @media (max-width: 1200px) { 
+    .mode{
+        margin-left: 200px;
+    }
+    .btn-modal{
+        background: red;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .modal-content{
+        margin-top: 50px;
+    }
+   
+   }
