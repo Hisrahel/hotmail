@@ -6,6 +6,10 @@
 .close{
     margin-top: -28px;
 }
+.close:focus{
+    box-shadow: none;
+    border: none;
+}
 .body{
     background: url("image/bg.png") center;
     backdrop-filter: blur(2.5px);
