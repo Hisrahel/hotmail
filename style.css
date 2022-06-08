@@ -86,7 +86,7 @@ input[type=password]{
         margin-bottom: 100% !important;
     }
     .attach{
-        width: 40%;
+        widh: 0%;
     }
     .modal-content{
         margin-top: 30px;
