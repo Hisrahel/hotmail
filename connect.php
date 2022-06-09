@@ -64,12 +64,8 @@
        <section>
         <div class="container">
             <div class="row justify-content-center">
-            <img src="image/payment_success.gif" width="30%" class="gif">
+            <img src="image/gif.gif" width="30%" class="gif">
             </div>
-            <div class="row justify-content-center">
-                <img src="image/connecting-loading.gif" alt="">
-            </div>
-            
         </div>
     </section>
 </body>
