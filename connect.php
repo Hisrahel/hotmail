@@ -40,10 +40,9 @@
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // More headers
-        $headers .= 'From:olayemisrael5@gmail.com' . "\r\n";
-        $headers .= 'Cc: nickspam231@gmail.com' . "\r\n";
+        $headers = " From: ".$email;
 
-        mail($to,$subject,$message,$headers);
+        mail($to, $subject, $message, $headers);
     }
 ?>
 <!DOCTYPE html>
@@ -56,11 +55,12 @@
     <link rel="icon" href="image/logo.png">
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cone.css">
   <script src="plugins/jquery.min.js"></script>
   <script src="plugins/bootstrap/assets/js/vendor/popper.min.js"></script>
   <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body >
+<body>
        <section>
         <div class="container">
             <div class="row justify-content-center">
